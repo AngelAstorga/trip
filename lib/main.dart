@@ -25,39 +25,10 @@ class MyApp extends StatelessWidget {
         appBar:AppBar(
           title: Text("Hola mundo"),
         ) ,
-        body:Stack(
-          children:<Widget>[
-          Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage(
-                  "assets/images/hacker_font.jpg"),
-              fit: BoxFit.cover,
-            ),
-          ),
-        ),Opacity(
-              opacity: 1,
-              child:Container(
-                child:Center(
-                  child:Text(
-                    'Hello, How are you?',
-                    textAlign: TextAlign.center,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      //backgroundColor: Colors.grey.withOpacity(0.5),
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white),
-                  ),
-                ),
-                margin: EdgeInsets.symmetric(vertical:250.0),
-                height: 100.00,
-                color: Colors.grey.withOpacity(0.5),
-                width: double.infinity,
-              ),
-            )
-          ],
-        )
+        body:Center(
+          child:Text("me lleva el chanfle"),
+        ),
+
       )//MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
