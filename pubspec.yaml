@@ -42,7 +42,11 @@ flutter:
 
   #assets:
  # - assets/images/hacker_font.jpg
-
+  assets:
+    - assets/images/person.jpg
+    - assets/images/person2.jpg
+    - assets/images/person3.jpg
+    - assets/images/person4.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -59,6 +63,11 @@ flutter:
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: fonts/Lato-Regular.ttf
   # example:
   # fonts:
   #   - family: Schyler
