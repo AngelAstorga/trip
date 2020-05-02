@@ -4,18 +4,33 @@ class HeaderAppbarMessage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return ClipPath(
-      clipper: MyClipper(),
-      child: Container(
-        height: 120.0,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/images/hellsing.jpg"),
-            fit: BoxFit.cover,
+    return Column(
+      children: <Widget>[
+        ClipPath(
+          clipper: MyClipper(),
+          child: Container(
+            height: 120.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("assets/images/hellsing.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Stack(
+              children: <Widget>[
+                Opacity(
+                  opacity: 0.4,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-          shape: BoxShape.rectangle,
         ),
-      ),
+      ],
     );
   }
 
@@ -30,6 +45,7 @@ class MyClipper extends CustomClipper<Path>{
    path.quadraticBezierTo(size.width/2, size.height+20, (size.width/2)+(size.width/8)+20, size.height-20);
    path.quadraticBezierTo((size.width*(3/4))+25, size.height-60.0, size.width, size.height-30);
    path.lineTo( size.width, 0);
+   path.close();
     return path;
   }
 

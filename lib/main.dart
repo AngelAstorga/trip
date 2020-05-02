@@ -73,13 +73,32 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+
       body: Stack(
         children: <Widget>[
-          HeaderAppbarMessage(),
+          ListView(
+            children: <Widget>[
+              DescriptionPlace("Angel Astorga",5,"The Flutter framework has been optimized to make rerunning build methods fast\, so that you can just rebuild anything that needs updating rather than having to individually change instances of widgets."),
+              ReviewList(),
+            ],
+          ),
+          HeaderAppBar(),
+        ],
+      ),
+      //new DescriptionPlace("Angel Astorga",5,"The Flutter framework has been optimized to make rerunning build methods fast\, so that you can just rebuild anything that needs updating rather than having to individually change instances of widgets."),
+
+    );
+
+    /*
+      Scaffold(
+      body: Stack(
+        children: <Widget>[
           CardDesignerList(),
+          HeaderAppbarMessage(),
         ],
       ),
     );
+    */
       /* Scaffold(
 
       body: Stack(

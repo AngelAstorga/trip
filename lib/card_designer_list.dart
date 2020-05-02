@@ -8,6 +8,10 @@ class CardDesignerList extends StatelessWidget{
     CardDesigner("assets/images/person2.jpg","Rocky Balboa","Experience: 14 years"),
     CardDesigner("assets/images/person3.jpg","Nathanael","Experience: 34 years"),
     CardDesigner("assets/images/person4.jpg","Viuda negra","Experience: 54 years"),
+    CardDesigner("assets/images/person.jpg","Juan velazco","Experience: 04 years"),
+    CardDesigner("assets/images/person2.jpg","Rocky Balboa","Experience: 14 years"),
+    CardDesigner("assets/images/person3.jpg","Nathanael","Experience: 34 years"),
+    CardDesigner("assets/images/person4.jpg","Viuda negra","Experience: 54 years"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -22,7 +26,7 @@ class CardDesignerList extends StatelessWidget{
         separatorBuilder: (context,index)=>Divider(
           color: Colors.black,
         ),*/
-        itemCount: 4,
+        itemCount: 8,
         itemBuilder: (context,index)=>Container(
           padding: EdgeInsets.only(
             top:10.0,
