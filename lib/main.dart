@@ -1,7 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:tripapp/card_designer_list.dart';
 import 'package:tripapp/description_place.dart';
 import 'package:tripapp/header_appbar.dart';
+import 'package:tripapp/header_appbar_message.dart';
+import 'package:tripapp/message_view.dart';
 import 'package:tripapp/review_list.dart';
 
 void main() => runApp(MyApp());
@@ -70,6 +73,14 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
+      body: Stack(
+        children: <Widget>[
+          HeaderAppbarMessage(),
+          CardDesignerList(),
+        ],
+      ),
+    );
+      /* Scaffold(
 
       body: Stack(
         children: <Widget>[
@@ -85,5 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
       //new DescriptionPlace("Angel Astorga",5,"The Flutter framework has been optimized to make rerunning build methods fast\, so that you can just rebuild anything that needs updating rather than having to individually change instances of widgets."),
 
     );
+
+       */
   }
 }

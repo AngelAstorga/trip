@@ -52,6 +52,7 @@ flutter:
     - assets/images/paisaje3.jpg
     - assets/images/paisaje4.jpg
     - assets/images/paisaje5.jpg
+    - assets/images/hellsing.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
