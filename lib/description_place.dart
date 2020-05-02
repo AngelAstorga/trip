@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tripapp/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget{
   String namePlace;
@@ -28,7 +29,6 @@ class DescriptionPlace extends StatelessWidget{
           color: Color(0xFFf2c611),
         )
     );
-
     final star =Container(
       margin: EdgeInsets.only(
         top: 320.0,
@@ -40,6 +40,7 @@ class DescriptionPlace extends StatelessWidget{
       )
     );
     final descriptonPart= Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Row(
           children: <Widget>[
@@ -86,6 +87,7 @@ class DescriptionPlace extends StatelessWidget{
           ),
 
         ),
+        ButtonPurple("Navigate"),
       ],
     );
     return descriptonPart;
