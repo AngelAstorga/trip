@@ -1,11 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tripapp/card_designer_list.dart';
-import 'package:tripapp/description_place.dart';
-import 'package:tripapp/header_appbar.dart';
-import 'package:tripapp/header_appbar_message.dart';
-import 'package:tripapp/message_view.dart';
-import 'package:tripapp/review_list.dart';
+import 'package:tripapp/bottom_navbar.dart';
+import 'package:tripapp/bottom_navbar_cupertino.dart';
 
 void main() => runApp(MyApp());
 
@@ -27,7 +23,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: BottomNavbarCupertino(),
     );
   }
 }
@@ -72,22 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return Scaffold(
-
-      body: Stack(
-        children: <Widget>[
-          ListView(
-            children: <Widget>[
-              DescriptionPlace("Angel Astorga",5,"The Flutter framework has been optimized to make rerunning build methods fast\, so that you can just rebuild anything that needs updating rather than having to individually change instances of widgets."),
-              ReviewList(),
-            ],
-          ),
-          HeaderAppBar(),
-        ],
-      ),
-      //new DescriptionPlace("Angel Astorga",5,"The Flutter framework has been optimized to make rerunning build methods fast\, so that you can just rebuild anything that needs updating rather than having to individually change instances of widgets."),
-
-    );
+    return null;
 
     /*
       Scaffold(
